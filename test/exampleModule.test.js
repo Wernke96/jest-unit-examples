@@ -1,7 +1,7 @@
 const example = require('../app/exampleModule');
 const math = require('../app/add');
 
-math.add = jest.fn();
+jest.mock('../app/add');
 describe("example test", function () { 
  test('testing add', function () {
     example.exampleModule();

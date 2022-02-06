@@ -1,7 +1,6 @@
 const User = require('../app/User');
-
 const math = require('../app/add');
-math.add = jest.fn();
+jest.mock('../app/add');
 describe("example test", function () { 
     
     test('User Test', function () {
